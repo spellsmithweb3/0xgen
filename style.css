@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+*{
+    font-family: 'Roboto Mono', monospace;
+}
+body
+{background-image: url(https://i.gifer.com/S9CS.gif);
+background-size: 100%;
+background-attachment: fixed;  
+}
+.main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    color: white;
+}
+.generate{
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+}
+.generate_btn{
+    margin-top: 30px;
+    width: max-content;
+    margin-left: 75px;
+    outline: none;
+    color: black;
+}
+.generate input{
+    outline: none;
+    width: 15rem;
+}
+.ticker{
+	background: #000;
+	color: #FFF;
+  border: 1px solid #aaa;
+	padding: 0.9% 0.8% .1%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="description" content="minhacarteira.eth | gerador de enderecos">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/5.5.4/ethers.umd.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="0xgen.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>minhacarteira.eth v1 - gerador de endereços</title>
+</head>
+<body>
+  <body onload="startTime()">
+    <div class="main">
+        <div class="head">
+  <div class="container">
+  <div class="text"></div>
+</div>        <h2>minhacarteira.eth v1.0</h2>
+</div>
+
+      <div class="ticker">
+      <br>ETH ticker
+      <p>$<a href="javascript: reload()"></a><span id="eth"></span>
+        <div id="clock">Clock:</div></p>
+      </div>
+        <div class="generate">
+            <p>Endereco</p>
+            <input id="address" readonly type="text" placeholder="0x0...">
+            <p>Chave privada</p>
+            <input id="private_key" readonly type="text" placeholder="0x0...">
+            <p>Chave mnemonica</p>
+            <input id="mnemonic" readonly type="text" placeholder="Armazene em local seguro...">
+            <button class="generate_btn" onclick="generate()">Gerar</button>
+          
+          <p>Fork it: <a href="https://github.com/spellsmithweb3/0xgen">Github </a>
+        </div>
+    </div>
+  </div>
+</body>
+</html>
